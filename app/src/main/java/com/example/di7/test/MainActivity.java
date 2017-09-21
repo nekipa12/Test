@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //getActionBar().hide();
         bf = new BlankFragment();
         FragmentTransaction ft = getFragmentManager().beginTransaction();
         ft.add(R.id.container, bf).commit();

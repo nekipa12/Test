@@ -7,7 +7,16 @@ public class User {
     private double longitude;
     private double latitude;
     private boolean isRider;
-    private int lastTime;
+    private long lastTime;
+
+
+    public long getLastTime() {
+        return lastTime;
+    }
+
+    public void setLastTime(long lastTime) {
+        this.lastTime = lastTime;
+    }
 
     public String getUsername() {
         return username;
@@ -53,11 +62,18 @@ public class User {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
-    public User(String username, String email, double longtitude, double lattitude, boolean isRider) {
+    public User(String username, String email, double longtitude, double lattitude, boolean isRider, int lastTime) {
         this.username = username;
         this.email = email;
         this.longitude = longtitude;
         this.latitude = lattitude;
+        this.isRider = isRider;
+        this.lastTime = lastTime;
+    }
+
+    public User(String username, String email, boolean isRider) {
+        this.username = username;
+        this.email = email;
         this.isRider = isRider;
     }
 }

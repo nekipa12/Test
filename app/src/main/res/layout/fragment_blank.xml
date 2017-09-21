@@ -5,6 +5,16 @@
     android:orientation="vertical"
     tools:context="com.example.di7.test.BlankFragment">
 
+    <Switch
+        android:id="@+id/riderOrDriverSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="46dp"
+        android:background="#86ffffff"
+        android:checked="false" />
 
     <TextView
         android:id="@+id/textView2"
@@ -35,6 +45,21 @@
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPassword" />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="text" />
+
 
     <Button
         android:id="@+id/btnAuth"
